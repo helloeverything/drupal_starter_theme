@@ -1,4 +1,4 @@
 drupal_theme
 ============
 
-drupal_theme Updated
+A naked drupal theme built in HTML5 (where possible) for Projects.
