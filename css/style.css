@@ -1,5 +1,6 @@
 /* See noralize for CSS reset */
-body{font:12px/1.55 "Helvetica Neue", Arial, sans-serif;color:#000;background:url(img/bg.jpg) repeat}
+body{font:12px/1.55 "Helvetica Neue", Arial, sans-serif;color:#111;background:url(img/bg.jpg) repeat}
+a{color: #111}
 /*============================================================================== 
 Structure
 ================================================================================ */
@@ -58,9 +59,7 @@ button{background-color:#333;text-align:center;white-space:nowrap;color:#fff;pad
 Header
 ================================================================================ */
 a:hover{opacity: 0.8}
-header {}
 .logo {float: left;text-decoration: none;margin: 10px 0;}
-
 .breadcrumbs{background: #f8f8f8; padding: 6px;}
 
 
@@ -68,18 +67,19 @@ header {}
 Navigation
 ================================================================================ */
 ul.menu li{margin:0; padding:0}
-nav{border-top:1px solid #000;border-bottom:1px solid #000}
+nav{border-top:1px solid #000;border-bottom:1px solid #000;margin-bottom: 20px;}
 nav a{color:#000;font-size:13px;font-weight:bold;text-decoration:none}
 nav ul{padding:0;margin:0}
 nav li{display:inline;float:left}
 nav li a{display:block;padding:8px 15px;text-decoration:none;font-weight:bold;color:#069;border-right:1px solid #ccc}
 nav li a:hover{color:#c00}
-nav li ul{display:none;width:12em;background-color:#69f;box-shadow:0 4px 4px #ccc}
+nav li ul{display:none;width:12em;background-color:#39619E;box-shadow:0 4px 4px #ccc}
 nav li:hover ul,nav li.hover ul{display:block;position:absolute;margin:0;padding:0}
 nav li:hover li,nav li.hover li{float:none}
-nav li:hover li a,nav li.hover li a{background-color:#69f;border-bottom:1px solid #fff}
+nav li:hover li a,nav li.hover li a{background-color:#39619E;border-bottom:1px solid #fff}
 nav li li a:hover{background-color:#8db3ff}
 nav li ul li a{color:#fff}
+
 
 
 
