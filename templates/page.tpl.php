@@ -5,14 +5,11 @@
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       <?php endif; ?>
+      <?php print render($page['header']); ?>
 </header>
 
 <nav class="cf">
-<?php print render($page['header']); ?>
-    <?php /* if ($main_menu || $secondary_menu): ?>
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
-        <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
-    <?php endif; */ ?>
+<?php print render($page['navigation']); ?>
 </nav>
 
 
@@ -23,7 +20,7 @@
 
 <?php print $messages; ?>
 
-<section class="cms-content cf">
+<section class="cms-content <?php if ($page['sidebar_first']): ?>has-sidebar-first<?php endif; ?> <?php if ($page['sidebar_second']): ?>has-sidebar-second<?php endif; ?> cf">
     <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
     <a id="main-content"></a>
     <?php print render($title_prefix); ?>
@@ -35,6 +32,14 @@
     <?php print render($page['content']); ?>
     <?php print $feed_icons; ?>
 </section>
+
+<?php if ($page['sidebar_first']): ?>
+	<aside class="sidebar-first"><?php print render($page['sidebar_first']); ?></aside>
+<?php endif; ?>
+
+<?php if ($page['sidebar_second']): ?>
+	<aside class="sidebar-second"><?php print render($page['sidebar_second']); ?></aside>
+<?php endif; ?>
 
 <footer class="cf">
 <?php print render($page['footer']); ?>

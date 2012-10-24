@@ -1,6 +1,22 @@
-name = Drupal HMTL5 Starter Theme Version 1.0
-description = Drupal HMTL5 Starter Theme Version 1.0
+
+name = Drupal HTML5 Starter Theme
+description = A base theme written in HTML5 for Drupal 7
 core = 7.x
+version = "7.1.1"
+
 stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/style.css
+
 scripts[] = js/jquery-1.8.2.min.js
+
+regions[header] = Header
+regions[navigation] = Navigation
+
+regions[help] = Help
+regions[highlighted] = Highlighted
+
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+
+regions[footer] = Footer
