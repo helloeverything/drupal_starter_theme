@@ -109,7 +109,7 @@ Home page specific
 Content Pages
 ================================================================================ */
 .content table{border-radius: 2px;}
-.content table th, table td{padding: 2px 4px}
+.content table th, table td{padding:3px 6px}
 .content table thead tr th{background: #39619E; color: #fff; font-weight: bold; border-bottom: 0}
 .content ul{clear: both}
 
